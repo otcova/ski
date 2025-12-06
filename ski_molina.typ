@@ -41,8 +41,8 @@ Molina & Masella
   $0$, $4$, $215.50€$,
 )
 
-= Transport - Tren R3
 
+= Transport - Tren R3
 
 #block(
   fill: luma(230),
@@ -53,7 +53,7 @@ Molina & Masella
 Hi han
 #link("https://rodalies.gencat.cat/ca/detalls/article/06_12_PAT_R3")[obres en R3],
 i haurem d'agafar un
-#link("https://rodalies.gencat.cat/web/.content/01_Actualitat/2025/06_12_PAT_R3/PAT_R3-Fase-I-Localizacion-PARADAS-BUS-V19-1.pdf")[autobus de subsitucio] (sense cost afegit)
+#link("https://rodalies.gencat.cat/web/.content/01_Actualitat/2025/06_12_PAT_R3/PAT_R3-Fase-I-Localizacion-PARADAS-BUS-V19-1.pdf")[autobus de substitució] (sense cost afegit)
 ]
 
 #block(
@@ -79,10 +79,12 @@ i haurem d'agafar un
   $60min$, [Estació Tren Molina $->$ Apartament], [Peus], [Peus],
 )
 
+
 = Transport - Cotxe X?
 De anada, com que anem en diferents dies potser hi han posibilitats.\
 - *Diumenge* 1 Feb mati: 4 persones
 - Dilluns 2 Feb mati: 2 persones
+
 
 = Residencia Pista Llarga
 
@@ -110,9 +112,9 @@ De anada, com que anem en diferents dies potser hi han posibilitats.\
 
 #qr("https://www.esquiadegust.cat/wp-content/uploads/2025/12/TARIFA-PREUS-LLOGUER-2025-26.pdf")[
 *LLOGUER SNOW-ESQUÍ LA MOLINA*\
-$75€$ ski 4dies\
-$71€$ snow 3dies\
-$60€$ ski 3dies
+$75€$ ski 4 dies\
+$71€$ snow 3 dies\
+$60€$ ski 3 dies
 ]
 
 = Menjar
