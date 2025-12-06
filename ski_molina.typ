@@ -74,7 +74,7 @@ i haurem d'agafar un
   stroke: (x, y) => if y == 0 { (bottom: 0.7pt + black) },
   [*Temps*], [*Direcció*], [*Transport*], [*Requisit*],
   $20min$, [Sants Estació $->$ Fabre i Puig], [R4], [T-Jove],
-  $60min$, [Fabre i Puig $->$ Vic], [Bus subsitucio R3], [T-Jove],
+  $60min$, [Fabre i Puig $->$ Vic], [Bus substitució R3], [T-Jove],
   $80min$, [Vic $->$ Molina], [R3], [T-Jove + Extra],
   $60min$, [Estació Tren Molina $->$ Apartament], [Peus], [Peus],
 )
