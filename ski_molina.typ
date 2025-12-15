@@ -5,15 +5,17 @@
 #let qr(url, body) = grid(
   columns: 2,
   gutter: 1em,
-  tiaoma.qrcode(url, width: 5em),
+  grid()[
+    #tiaoma.qrcode(url, width: 5em)
+    #link(url)[(pdf complet)]
+  ],
   {
-    show strong: link.with(url)
     body
   }
 )
 
 #set document(
-  title: [Opció A | Repetir Molina en 1-4 Feb]
+  title: [Opció A | Repetir Molina en 31 Gen - 4 Feb]
 )
 
 
@@ -82,11 +84,34 @@ i haurem d'agafar un
 
 = Transport - Cotxe X?
 De anada, com que anem en diferents dies potser hi han posibilitats.\
-- *Diumenge* 1 Feb mati: 4 persones
+- *Dissabte* 31 Gen mati: 4 persones / *Diumenge* 1 Feb mati: 4 persones
 - Dilluns 2 Feb mati: 2 persones
 
 
-= Residencia Pista Llarga
+= Apartamentos Solineu (31 Gen - 4 Feb)
+
+#table(
+  columns: (1.2fr, 1fr),
+  stroke: none,
+  [
+    Preu Total de 4 nits: $797€$
+    #table(
+      columns:3,
+      fill: (x, y) => if y < 2 { gray.lighten(60%) },
+      table.cell(colspan: 3)[*Preu Per Persona*],
+      [*Nits*], [*Persones*], [*Preu*],
+      $4$, [Ot, Xf, Ax, Ad], $160€$,
+      $2$, [Xj, ?], $80€$,
+    )
+    ~320m de la pista
+    #align(bottom, box(inset: (top: -100pt, bottom: -100pt), clip: true)[
+      #image("solineu_2.jpg")
+    ])
+  ],
+  image("solineu_1.jpg"),
+)
+
+= Residencia Pista Llarga (1 Feb - 4 Feb)
 
 //#columns(2, gutter: 8pt)[
 #table(
@@ -102,19 +127,28 @@ De anada, com que anem en diferents dies potser hi han posibilitats.\
       $3$, [Ot, Xf, Ax, Ad], $140€$,
       $2$, [Xj, ?], $94€$,
     )
-    #align(bottom)[#image("pista_llarga_1.jpg")]
+    ~120m de la pista
+    #align(bottom, box(inset: (top: -10pt, bottom: -10pt), clip: true)[
+      #image("pista_llarga_1.jpg")
+    ])
   ],
   image("pista_llarga_2.jpg"),
 )
 
 
-= Lloger Material
+= LLOGUER SNOW-ESQUÍ LA MOLINA
 
-#qr("https://www.esquiadegust.cat/wp-content/uploads/2025/12/TARIFA-PREUS-LLOGUER-2025-26.pdf")[
-*LLOGUER SNOW-ESQUÍ LA MOLINA*\
-$75€$ ski 4 dies\
-$71€$ snow 3 dies\
-$60€$ ski 3 dies
+#let lloguer = "https://www.esquiadegust.cat/wp-content/uploads/2025/12/TARIFA-PREUS-LLOGUER-2025-26.pdf";
+#qr(lloguer)[
+    #table(
+      columns:3,
+      fill: (x, y) => if y < 1 { gray.lighten(60%) },
+      [*Dies*], [*Equip*], [*Preu*],
+      $5$, [Ski], $90€$,
+      $4$, [Ski], $75€$,
+      $3$, [Ski], $60€$,
+      $3$, [Snow], $71€$,
+    )
 ]
 
 = Menjar
