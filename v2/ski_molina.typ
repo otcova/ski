@@ -121,7 +121,7 @@ En cas de ser propens a marejar-se amb cotxe:
 ]
 
 
-== Apartamentos Solineu (31 Gen - 4 Feb)
+== Apartament Solineu 5 persones (31 Gen - 4 Feb)
 
 #table(
   columns: (1.2fr, 1fr),
@@ -133,17 +133,16 @@ En cas de ser propens a marejar-se amb cotxe:
       radius: 4pt,
     )[⚠️ 320m de la pista]
 
-    Preu Total de 4 nits: $797€$
+    #link("https://www.booking.com/hotel/es/apartamentos-solineu.es.html?label=gog235jc-10CAsoRkIacmVzaWRlbmNpYWwtcGlzdGEtbGxhcmdhLTFIClgDaEaIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Apit5skGwAIB0gIkNDM2ZDNlMjQtNWZiZS00YjE1LWJiNzEtOWRmODE1NTU1YzM22AIB4AIB&sid=48e751a1f5c2c541cbb0817db4bc32ab&aid=356980&ucfs=1&arphpl=1&checkin=2026-01-31&checkout=2026-02-04&dest_id=900039884&dest_type=city&group_adults=4&req_adults=4&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=725b6d5d11b900c8&srepoch=1766158653&all_sr_blocks=9732301_88494362_0_0_0&highlighted_blocks=9732301_88494362_0_0_0&matching_block_id=9732301_88494362_0_0_0&sr_pri_blocks=9732301_88494362_0_0_0__115322&from=searchresults")[Preu] total de 4 nits: $1153€$
 
     #table(
-      columns: 4,
+      columns: 3,
       fill: (x, y) =>
         if y < 2 { gray.lighten(60%) }
-        else if x == 3 { green.lighten(60%) } ,
-      table.cell(colspan: 4)[*Preu Per Persona*],
-      [*Nits*], [*Persones*], table.cell(colspan: 2)[*Preu*],
-      $4$, [Ot, Xf, Ax, Ad], $160€$, $200€$,
-      $2$, [Xj, ?], $80€$, $-$,
+        else if x == 2 { green.lighten(60%) } ,
+      table.cell(colspan: 3)[*Preu Per Persona*],
+      [*Nits*], [*Persones*], [*Preu*],
+      $4$, [Ot, Xf, Ax, Ad], $289€$,
     )
 
 
@@ -206,3 +205,41 @@ En cas de ser propens a marejar-se amb cotxe:
   image("/assets/pista_llarga_2.jpg"),
 )
 
+== Apartamentos Solineu 4 persones (31 Gen - 4 Feb)
+
+#block(
+  fill: red.lighten(50%),
+  inset: 4pt,
+  radius: 4pt,
+)[⚠️ L'apartament de 4 personas ja no esta disponible per els 5 dies]
+
+#table(
+  columns: (1.2fr, 1fr),
+  stroke: none,
+  [
+    #block(
+      fill: yellow.lighten(50%),
+      inset: 4pt,
+      radius: 4pt,
+    )[⚠️ 320m de la pista]
+
+    Preu Total de 4 nits: $797€$
+
+    #table(
+      columns: 4,
+      fill: (x, y) =>
+        if y < 2 { gray.lighten(60%) }
+        else if x == 3 { green.lighten(60%) } ,
+      table.cell(colspan: 4)[*Preu Per Persona*],
+      [*Nits*], [*Persones*], table.cell(colspan: 2)[*Preu*],
+      $4$, [Ot, Xf, Ax, Ad], $160€$, $200€$,
+      $2$, [Xj, ?], $80€$, $-$,
+    )
+
+
+    #align(bottom, box(inset: (top: -100pt, bottom: -100pt), clip: true)[
+      #image("/assets/solineu_2.jpg")
+    ])
+  ],
+  image("/assets/solineu_1.jpg"),
+)
