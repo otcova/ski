@@ -105,10 +105,10 @@ De anada, com que anem en diferents dies potser hi han posibilitats.\
     )
     ~320m de la pista
     #align(bottom, box(inset: (top: -100pt, bottom: -100pt), clip: true)[
-      #image("solineu_2.jpg")
+      #image("/assets/solineu_2.jpg")
     ])
   ],
-  image("solineu_1.jpg"),
+  image("/assets/solineu_1.jpg"),
 )
 
 = Residencia Pista Llarga (1 Feb - 4 Feb)
@@ -129,10 +129,10 @@ De anada, com que anem en diferents dies potser hi han posibilitats.\
     )
     ~120m de la pista
     #align(bottom, box(inset: (top: -10pt, bottom: -10pt), clip: true)[
-      #image("pista_llarga_1.jpg")
+      #image("/assets/pista_llarga_1.jpg")
     ])
   ],
-  image("pista_llarga_2.jpg"),
+  image("/assets/pista_llarga_2.jpg"),
 )
 
 
